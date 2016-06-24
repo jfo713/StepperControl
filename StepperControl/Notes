@@ -1,0 +1,19 @@
+
+
+------------------------------------------------
+
+initWithCoder: Run in implementation file, what it does?
+
+    Make Information from Implementation file accessible(?) in storyboard
+
+    Anything done in interface - initWithCoder:
+
+Storyboard is xml file; when storyboard fires, decodes xml - will provide better placeholder/preview for injections made in code, useful more complex multi/object viewcontroller; 
+
+
+
+    Without initWithCoder:
+
+    i.e. StepperView - everything yesterday, manual code, not exposed/visualized in storyboard...
+
+    initWithCoder -

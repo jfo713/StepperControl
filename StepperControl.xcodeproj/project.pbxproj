@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B95A4131D1C2AE3005CBA56 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 2B95A4121D1C2AE3005CBA56 /* Notes */; };
 		2BEE5D2D1D1B05FE00A63966 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE5D2C1D1B05FE00A63966 /* main.m */; };
 		2BEE5D301D1B05FE00A63966 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE5D2F1D1B05FE00A63966 /* AppDelegate.m */; };
 		2BEE5D331D1B05FE00A63966 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE5D321D1B05FE00A63966 /* ViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B95A4121D1C2AE3005CBA56 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		2BEE5D281D1B05FE00A63966 /* StepperControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepperControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEE5D2C1D1B05FE00A63966 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2BEE5D2E1D1B05FE00A63966 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				2BEE5D321D1B05FE00A63966 /* ViewController.m */,
 				2BEE5D5E1D1B062900A63966 /* StepperControl.h */,
 				2BEE5D5F1D1B062900A63966 /* StepperControl.m */,
+				2B95A4121D1C2AE3005CBA56 /* Notes */,
 				2BEE5D341D1B05FE00A63966 /* Main.storyboard */,
 				2BEE5D371D1B05FE00A63966 /* Assets.xcassets */,
 				2BEE5D391D1B05FE00A63966 /* LaunchScreen.storyboard */,
@@ -251,6 +254,7 @@
 			files = (
 				2BEE5D3B1D1B05FE00A63966 /* LaunchScreen.storyboard in Resources */,
 				2BEE5D381D1B05FE00A63966 /* Assets.xcassets in Resources */,
+				2B95A4131D1C2AE3005CBA56 /* Notes in Resources */,
 				2BEE5D361D1B05FE00A63966 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = StepperControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theironyardhouston.com.StepperControl;
@@ -438,6 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = StepperControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theironyardhouston.com.StepperControl;
@@ -511,6 +517,7 @@
 				2BEE5D571D1B05FE00A63966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BEE5D581D1B05FE00A63966 /* Build configuration list for PBXNativeTarget "StepperControlTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +526,7 @@
 				2BEE5D5A1D1B05FE00A63966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BEE5D5B1D1B05FE00A63966 /* Build configuration list for PBXNativeTarget "StepperControlUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +535,7 @@
 				2BEE5D5D1D1B05FE00A63966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,9 +8,6 @@
 
 #import "StepperControl.h"
 
-
-
-
 @implementation StepperControl
 
 -(instancetype) init {
@@ -19,7 +16,6 @@
     [self setup];
     return self;
     
-    
 }
 
 -(void) setup {
@@ -27,15 +23,14 @@
     StepValue = 0;
     
     self.frame=CGRectMake(0, 0, 200, 40);
-    //self.backgroundColor = [UIColor greenColor];
+    self.layer.cornerRadius=15;
+    self.layer.masksToBounds=YES;
     
     UIButton *upButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
     upButton.backgroundColor = [UIColor redColor];
     upButton.userInteractionEnabled = YES;
     [upButton setTitle:@"+" forState:UIControlStateNormal];
     [upButton addTarget:self action:@selector(upButtonClick) forControlEvents:UIControlEventTouchUpInside];
-    
-    
     
     UIButton *downButton = [[UIButton alloc] initWithFrame:CGRectMake(160, 0, 40, 40)];
     downButton.backgroundColor = [UIColor blueColor];
@@ -52,29 +47,30 @@
     [self addSubview:downButton];
     [self addSubview:self.current];
     
- 
 }
 
--(IBAction) upButtonClick {
+-(void) upButtonClick {
     
     StepValue++;
     self.current.text = [NSString stringWithFormat:@"%d", StepValue];
     
+    //notify the delegates
+    [self.delegate stepperControlValueChanged:StepValue];
+    
 }
 
--(IBAction) downButtonClick {
+-(void) downButtonClick {
     
     StepValue--;
     self.current.text = [NSString stringWithFormat:@"%d", StepValue];
+    //NSLog(@"%d", StepValue);
+
+    //notify the delegates
+    [self.delegate stepperControlValueChanged:StepValue];
     
 }
 
-/*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
+ 
 @end

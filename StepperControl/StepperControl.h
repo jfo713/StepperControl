@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol StepperControlProtocol
+
+-(void) stepperControlValueChanged:(int) StepValue;
+
+@end
+
+IB_DESIGNABLE
+
 @interface StepperControl : UIView {
     
     int StepValue;
@@ -15,8 +23,14 @@
 }
 
 @property UILabel *current;
-//@property IBOutlet UIButton *upButton;
-//@property IBOutlet UIButton *downButton;
 
+@property (nonatomic, assign) IBInspectable CGFloat cornerRadius;
+
+@property (nonatomic,weak) id<StepperControlProtocol> delegate;
 
 @end
+
+
+
+
+

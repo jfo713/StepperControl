@@ -16,13 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     StepperControl *stepperControl = [[StepperControl alloc] init];
     
     stepperControl.frame = CGRectMake(self.view.frame.size.width/2-100, self.view.frame.size.height/2-20, 200, 40);
-   
+    
+    stepperControl.delegate = self;
+    
     [self.view addSubview:stepperControl];
+    
+}
+
+-(void)stepperControlValueChanged:(int)StepValue {
+    
+    NSLog(@"%d", StepValue);
     
 }
 
